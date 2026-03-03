@@ -29,3 +29,4 @@ nav:
   - Details:
     - details/goref.md
     - details/conbon-pprof2csv.md
+    - details/coregex.md

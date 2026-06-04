@@ -1,14 +1,16 @@
 ---
+title: ppt-master
 tags:
   - ppt
   - pdf
   - llm
+url: https://github.com/hugohe3/ppt-master
 ---
 ## 下载
 
 examples 目录居然有 581M 样例。
 
-![[attachments/Pasted image 20260604151833.png]]
+![](attachments/Pasted%20image%2020260604151833.png)
 
 期望之后会有精简版吧（太离谱了）
 
@@ -25,7 +27,7 @@ examples 目录居然有 581M 样例。
 
 生成 12 页 PPT，总共花费 26M tokens。
 
-![[attachments/Pasted image 20260604152418.png]]
+![](attachments/Pasted%20image%2020260604152418.png)
 
 > v4-flash 之前也用，混杂了之前的数据，不能看,v4-pro 的 In/Out 可以参考
 

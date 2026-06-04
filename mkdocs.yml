@@ -37,11 +37,11 @@ plugins:
   - glightbox
   - search
   - callouts
-  - awesome-pages
+  - include_dir_to_nav
 extra:
   generator: true
   tags:
     Go: Go
 nav:
   - Home: index.md
-  - Details: details/
+  - Details: details

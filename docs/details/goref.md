@@ -38,11 +38,12 @@ source 视图展示的东西比较诡异。
 ## goref 原理
 
 goref 整体工作流程主要3步，如下图所示：
-- [readHeap](#readHeap)
-- [FindRef](#FindRef)，主要是根据dwarf.Type 扫描
-- [FinalMark](#FinalMark)，仿照 GC 算法扫描
 
-![[attachments/Pasted image 20260420210611.png]]
+- [readHeap](#readheap)
+- [FindRef](#findref)，主要是根据dwarf.Type 扫描
+- [FinalMark](#finalmark)，仿照 GC 算法扫描
+
+![](attachments/Pasted%20image%2020260420210611.png)
 
 ## readHeap
 
@@ -50,7 +51,7 @@ goref 首先会 `readHeap` 从 delve 中读取进程中的变量，恢复 go run
 
 `region` 的概念应该是区域的意思，包含的 `mem` 是 `delve/pkg/proc.MemoryReadWriter`
 
-![[attachments/Pasted image 20260420211159.png]]
+![](attachments/Pasted%20image%2020260420211159.png)
 
 
 `(*HeapScope).readHeap` 会读取以下信息:
@@ -121,7 +122,7 @@ type ModuleData struct {
 
 ## FindRef
 
-![[attachments/Pasted image 20260420211241.png]]
+![](attachments/Pasted%20image%2020260420211241.png)
 
 
 ### global var 处理
@@ -215,10 +216,9 @@ itype 是整合得到的实际赋给 interface 包含或者指向的对象的类
 
 通过 `findObject`，从 `x.Addr` 寻找对象。
 
-
 ## FinalMark
 
-![[attachments/Pasted image 20260420211409.png]]
+![](attachments/Pasted%20image%2020260420211409.png)
 
 
 [pkg/proc/reference.go#L158](https://github.com/Lslightly/goref/blob/373c1be867ff466b27ca24d7c52b9b3211393719/pkg/proc/reference.go#L158)

@@ -1,6 +1,6 @@
 site_name: Lslightly's Stars
-site_url: https://lslightly.github.io/stars
-repo_url: https://github.com/Lslightly/stars
+site_url: https://lslightly.github.io/star-in-my-heart
+repo_url: https://github.com/Lslightly/star-in-my-heart
 # 如果你的默认分支是 main，文档在 docs 文件夹下，通常配置如下：
 edit_uri: edit/main/docs/
 theme:
@@ -10,6 +10,7 @@ theme:
       Go: fontawesome/brands/golang
       Rust: fontawesome/brands/rust
   name: material
+  custom_dir: overrides # https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/?h=giscu#giscus-integration
   palette:
     # 浅色模式（默认）
     - media: "(prefers-color-scheme: light)"
@@ -48,7 +49,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - footnotes
+  - footnotes # https://pypi.org/project/mkdocs-bibtex/4.2.6
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
@@ -59,6 +60,7 @@ plugins:
   - search
   - callouts
   - include_dir_to_nav
+  - meta # https://squidfunk.github.io/mkdocs-material/plugins/meta/
   - bibtex: # https://pypi.org/project/mkdocs-bibtex/4.2.6
       bib_dir: docs/bibs
 extra:

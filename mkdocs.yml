@@ -63,8 +63,9 @@ plugins:
   - meta # https://squidfunk.github.io/mkdocs-material/plugins/meta/
   - bibtex: # https://pypi.org/project/mkdocs-bibtex/4.2.6
       bib_dir: docs/bibs
+copyright: Copyright &copy; 2026 Lslightly
 extra:
-  generator: true
+  generator: false
   tags:
     Go: Go
     Rust: Rust

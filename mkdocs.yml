@@ -1,16 +1,34 @@
 site_name: Lslightly's Stars
 site_url: https://lslightly.github.io/stars
 repo_url: https://github.com/Lslightly/stars
+# 如果你的默认分支是 main，文档在 docs 文件夹下，通常配置如下：
+edit_uri: edit/main/docs/
 theme:
   icon:
     repo: fontawesome/brands/github
     tag:
       Go: fontawesome/brands/golang
+      Rust: fontawesome/brands/rust
   name: material
+  palette:
+    # 浅色模式（默认）
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
   language: zh
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.indexes
+    - content.action.view
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji 
@@ -30,18 +48,32 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - footnotes
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
 plugins:
   - tags
   - glightbox
   - search
   - callouts
   - include_dir_to_nav
+  - bibtex: # https://pypi.org/project/mkdocs-bibtex/4.2.6
+      bib_dir: docs/bibs
 extra:
   generator: true
   tags:
     Go: Go
+    Rust: Rust
 nav:
-  - Home: index.md
-  - Details: details
+  - 主页: index.md
+  - 代码项目:
+    - repos/index.md
+    - repos
+  - 论文:
+    - papers/index.md
+    - papers
+  - 杂项:
+    - misc/index.md
+    - misc

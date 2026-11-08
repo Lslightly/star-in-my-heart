@@ -1,11 +1,9 @@
 # Lslightly's Stars
 
-| 仓库                                                                                                                      | 状态   | 描述                                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [goref](https://github.com/cloudwego/goref) [:fontawesome-solid-book:](./details/goref.md)                              | 可用   | 利用delve从Go进程运行时中获取heap信息，从而获取某一时刻的对象引用图                                                                                                                                                                                                         |
-| [conbon/pprof2csv](https://github.com/conbon/pprof2csv): [:fontawesome-solid-book:](./details/goref.md)                 | 不可用  | pprof profile 转 csv                                                                                                                                                                                                                             |
-| [coregx/coregex](https://github.com/coregx/coregex): [:fontawesome-solid-book:](./details/coregex.md)                   | TODO | 利用SIMD加速x86平台的regex                                                                                                                                                                                                                             |
-| [microsoft/markitdown](https://github.com/microsoft/markitdown): [:fontawesome-solid-book:](./details/markitdown.md)    | 可用   | 将 PDF、office file、图片 转成 markdown（**纯文本**），不会输出图片                                                                                                                                                                                                |
-| [docling-project/docling](https://github.com/docling-project/docling): [:fontawesome-solid-book:](./details/docling.md) | 可用   | 将 PDF、office file、音频等 [输入格式](https://docling-project.github.io/docling/usage/supported_formats/#supported-input-formats)转换为 markdown、html 等 [输出格式](https://docling-project.github.io/docling/usage/supported_formats/#supported-output-formats) |
-| [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master): [:fontawesome-solid-book:](./details/ppt-master.md)        | 可用   | 将文档转化为 PPT，包含 PPT 原生 可编辑形状                                                                                                                                                                                                                      |
+希望能**持续更新**并且**持续精简提炼**的收藏集。
 
+精简约束条件：暂无。
+
+- [GitHub项目](./repos/index.md)
+- [论文](./papers/index.md)
+- [杂项评论](./misc/index.md)
